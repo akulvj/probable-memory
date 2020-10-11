@@ -69,7 +69,7 @@ body {
 /* header background */
 
 header.sticky {
-  background-color: #e2e1e2;
+  background-color: #fff;
 }
 
 .sticky a {
@@ -139,7 +139,7 @@ header.sticky {
   }
 
   .menu-items.open li a:hover {
-    border-bottom: #e2e1e2;
+    border-bottom: #fff;
   }
 }
 
@@ -160,7 +160,7 @@ header.sticky {
     left: 0;
     height: 100vh;
     transform: translateX(100vw);
-    background-color: #e2e1e2;
+    background-color: #fff;
     transition: transform 0.3s ease-in-out;
   }
   .menu-items.open {
@@ -185,7 +185,7 @@ header.sticky {
   }
 
   .menu-items.open li a:hover {
-    border-bottom: #e2e1e2;
+    border-bottom: #fff;
   }
 }
 
@@ -269,7 +269,7 @@ header.sticky {
 
 @media screen and (max-width: 1000px) {
   .slideshow-item-text {
-    max-width: 50%;
+    max-width: 70%;
     padding: 4rem 1rem;
   }
 
@@ -283,7 +283,7 @@ header.sticky {
     max-width: 100%;
     padding: 2rem;
     top: initial;
-    bottom: 0;
+    bottom: 8%;
     transform: initial;
   }
 
