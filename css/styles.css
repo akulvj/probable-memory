@@ -54,7 +54,7 @@ body {
   font-size: 1rem;
   padding: 1.5em 1em 1.5em 1em;
   margin: 2em;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   /* transition: background 0.3s ease-in-out, color 0.3s ease-in-out; */
   /* border-radius: 2px; */
@@ -191,16 +191,24 @@ header.sticky {
 
 /* slider */
 
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
 .slideshow {
   background-color: #000;
-  width: 100%;
-  height: 100vh;
+  width: 82%;
+  height: calc(100vh - 70px);
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .slideshow-item {
-  width: inherit;
+  width: 100%;
   height: inherit;
   position: absolute;
   opacity: 0;
@@ -283,11 +291,102 @@ header.sticky {
     max-width: 100%;
     padding: 2rem;
     top: initial;
-    bottom: 8%;
+    bottom: 10%;
     transform: initial;
   }
 
   .slideshow-item-text h5 {
     font-size: 2rem;
   }
+}
+
+/* description */
+
+.description {
+  margin-top: 40px;
+}
+
+.description h1,
+.description h3 {
+  text-align: center;
+  font-weight: 300;
+  background-color: #000;
+  color: #fff;
+}
+
+.description h1 {
+  font-size: 4em;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.description h3 {
+  font-size: 2em;
+  padding-bottom: 100px;
+}
+
+.description p {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 70%;
+  font-weight: 300;
+  color: #2c2c2c;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+  .description p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .description p {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* map */
+
+.map-section h3 {
+  width: 90%;
+  margin: auto;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.mapouter {
+  margin: 40px auto 80px auto;
+}
+
+.gmap_canvas iframe {
+  width: 90%;
+  height: 800px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+/* footer */
+
+.footer-section {
+  background-color: black;
+  padding: 100px 0;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section img {
+  height: 60px;
+  margin-left: auto;
+}
+
+.footer-section p {
+  margin: auto;
 }
