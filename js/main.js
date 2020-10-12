@@ -52,3 +52,7 @@ $(".counting").each(function () {
     }
   );
 });
+
+// counter
+
+
