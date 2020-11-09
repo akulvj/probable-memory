@@ -18,6 +18,10 @@ body {
   margin-top: 71px;
 }
 
+.bimg img {
+  object-fit: cover;
+}
+
 .content {
   transform: translate(0%, -750%);
   color: whitesmoke;
