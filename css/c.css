@@ -75,6 +75,7 @@ body {
   .description1 {
     padding: 40px;
     font-size: 20px;
+    font-weight: 300;
   }
   div.vid {
     max-height: 370px;
@@ -88,6 +89,7 @@ body {
   .description1 {
     padding: 40px;
     font-size: 18px;
+    font-weight: 300;
   }
   div.vid {
     max-height: 200px;
