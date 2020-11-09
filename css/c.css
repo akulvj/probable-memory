@@ -19,6 +19,7 @@ body {
 }
 
 .bimg img {
+  margin-top: 110px;
   object-fit: cover;
 }
 
@@ -73,7 +74,7 @@ body {
 @media screen and (max-width: 1024px) {
   .description1 {
     padding: 40px;
-    font-size: 12px;
+    font-size: 20px;
   }
   div.vid {
     max-height: 370px;
@@ -86,6 +87,7 @@ body {
 @media screen and (max-width: 767px) {
   .description1 {
     padding: 40px;
+    font-size: 18px;
   }
   div.vid {
     max-height: 200px;
