@@ -53,6 +53,5 @@ $(".counting").each(function () {
   );
 });
 
-// counter
 
 

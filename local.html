@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/c.css">
+    <!-- Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/9ac67564dd.js" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title>Mumbai</title>
+</head>
+<body>
+    <img class="bottomMenu" id="myBtn" title="Go to top" src="images/home/top.png" >
+    <header class="header" id="header-section">
+        <a href="index.html"><img class="site-logo" src="images/home/logo-black.png" alt="site-logo" /></a>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html" class="menu-item">Home</a></li>
+            <li><a href="destinations.html" class="menu-item">Destinations</a></li>
+            <li><a href="food.html" class="menu-item">Food</a></li>
+            <li><a href="contact.html" class="menu-item">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="bimg">
+            <img src="images/des/food1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1>Culinary Delights Of Mumbai</h1>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="description1">
+            <p>
+            <h2>Seafood Specialities</h2>Mumbai is a coastal city with a long history of fish trade as the city's
+            natives were kolis or fishermen. For this reason, seafood is an essential culinary item that forms an
+            important part of Mumbai cuisine. Some of the main seafood items offered in Mumbai include fish koliwada,
+            tisriya masala, prawn tikki, fish thali, chanok fish fry, bangda tikhale, surmai fish curry etc. One main
+            dish to try in Mumbai is the bombil fish fry or Bombay duck, which is actually a fish found aplenty in the
+            waters around the city. It is crunchy on the outside and succulent on the inside. To prepare this, the fish
+            is first flattened, then dipped in a batter of gram flour enriched with spices, and finally fried. It can be
+            eaten as a meal in itself or can be served with rotis (Indian flatbread).
+            </p>
+        </div>
+        <div class="imgc">
+            <img src="images/des/lob.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="description1">
+            <p>
+            <h2>Zhunka bhakar</h2>This dish has deep roots in the farming and working-class communities of interior
+            Maharashtra. Considered the common man's food, a political decision was made at the highest echelons of
+            government to make it available everywhere. Overnight, thousands of zhunka bhakar stalls opened, none
+            pricing it at more than 15 cents (Rs 10). Traditionally, the zhunka is made using chopped onions tempered
+            with mustard seeds and kadipatta leaves mixed with chickpea flour and is dry. It is eaten with jowar
+            (millet) bhakri or roti.
+            Try the stalls opposite Chhatrapati Shivaji Terminus (originally called Victoria Terminus) and BMC
+            Headquarters.
+            </p>
+        </div>
+        <div class="imgc">
+            <img src="images/des/Zunka_Bhakar_1.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="description1">
+            <p>
+            <h2>Kolhapuri mutton</h2> The hotter the temperature of a city, the hotter the food. And it's true of this
+            mutton dish that has its roots in Kolhapur, a city in the south of Maharashtra. It comes in two coconut
+            based gravy variations. The nuclear strength version is called tambda rassa (a red chili-spiced
+            extravaganza). And the milder version is called pandhara rassa (yoghurt, cashew nuts and raisin
+            embellished). Both go well with either rotis or rice when you're in the mood for a feast.
+            Taste the heat at Purepur Kolhapur, 1, Aditya Apartments, Parleshwar Road, Parleshwar Mandir, Vile Parle
+            (E), +91 22 2613 6181</p>
+        </div>
+        <div class="imgc">
+            <img src="images/des/kthali.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="description1">
+            <p>
+            <h2>Puran poli</h2>A festive dish made by Maharashtrians and Gujaratis especially during Holi (to celebrate
+            the end of the winter season) and Dussehra (to celebrate the triumph of Lord Ram over the demon Raavan). It
+            is made by simmering chana dal (yellow gram) with sugar or jaggery (molasses or gur) till it dries up, and
+            then hand-grinding to smooth it out. Nutmeg and cardamom powders are the flavorings. Palm-sized balls of the
+            paste are stuffed into wheat flour dough and rolled out to be roasted on a tawa frying pan with a little
+            ghee (clarified butter). Do add a lot of ghee when you're eating them, they taste tops then.
+            Puran polis can be found in some grocery stores but they are a poor mass-produced version of the real thing.
+            The real ones can only be found in a Maharashtrian or Gujarati home.</p>
+        </div>
+        <div class="imgc">
+            <img src="images/des/puran.jpg" alt="">
+        </div>
+    </section>
+    <div class="footer-section">
+        <a href="index.html"><img src="images/home/logo-white.png" alt=""></a>
+        <p>&copy;2020</p>
+    </div>
+    <script>
+        $(window).scroll(function() {
+          var height = $(window).scrollTop();
+          if (height > 350) {
+              $('#myBtn').fadeIn();
+          } else {
+              $('#myBtn').fadeOut();
+          }
+      });
+      $(document).ready(function() {
+          $("#myBtn").click(function(event) {
+              event.preventDefault();
+              $("html, body").animate({ scrollTop: 0 }, "slow");
+              return false;
+          });
+
+      });
+      </script>
+</body>
+
+</html>

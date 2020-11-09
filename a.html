@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/c.css">
+    <!-- Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/9ac67564dd.js" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title>Mumbai</title>
+</head>
+
+<body>
+    <img class="bottomMenu" id="myBtn" title="Go to top" src="images/home/top.png" >
+    <header class="header" id="header-section">
+        <a href="index.html"><img class="site-logo" src="images/home/logo-black.png" alt="site-logo" /></a>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html" class="menu-item">Home</a></li>
+            <li><a href="destinations.html" class="menu-item">Destinations</a></li>
+            <li><a href="food.html" class="menu-item">Food</a></li>
+            <li><a href="contact.html" class="menu-item">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="bimg">
+            <img src="images/des/w1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1>Arts and Crafts</h1>
+        </div>
+    </section>
+    <section class="container">
+        <div class="description1">
+            <p>
+            <h2>Ganesha Idols</h2>A symbol of wisdom and good luck, Lord Ganesha is the most worshipped Hindu god in
+            Maharashtra. Ganesh Chaturthi is a prominent 10-day long festival celebrated across households in
+            Maharashtra during the months of August and September with great pomp and show. Devotees buy Ganesha idols
+            and images and keep him as a divine guest in their house and at the end of the festival, on designated days,
+            this idol or image is taken out ceremoniously and immersed in a river or the sea. These idols are available
+            in different sizes, shapes and poses. Workshops where these idols are made can be seen all over Mumbai,
+            especially in areas like Parel, Chinchpokli and Lalbaug. The village of Pen, about two hours south of
+            Mumbai, is known for its highly skilled artisans who craft lakhs of Ganesha statues annually. Lately, due to
+            environmental concerns that have arisen from the immersion of the idols at the shores of Mumbai, many
+            artisans are gradually moving towards more eco-friendly idol-making techniques like using red soil,
+            fertilisers, natural colour, papier-mâché and other biodegradable materials.</p>
+        </div>
+        <div class="imgc">
+            <img src="images/des/ganesh.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="description1">
+            <p>
+            <h2>Folk Dances And Songs Of Mumbai</h2>There is perhaps no better way to experience the magic of
+            Maharashtra than by exploring its beautiful music and dance traditions. Gifted with a rich culture and
+            heritage, Maharashtra has many different types of indigenous dance forms and these can all be seen in areas
+            in and around Mumbai. The ethnic dances of this region can be either colourful folk dances performed in
+            groups as entertainment during weddings and festivals or those that that tell popular folk and historical
+            tales as well as the more spiritual and personalised dance experiences that celebrate life. Povada is a
+            dance form that showcases the lifetime achievements of the celebrated Maratha ruler, Shivaji Maharaj. Lavani
+            and koli dance forms entertain with their mesmerising music and rhythmic movements. The Dhangri gaja dance
+            form by Dhangars of Sholapur pays respect to god. Dindi and kala are religious folk dances, which express
+            the ecstasy of Lord Krishna. Maharashtra has also had great saint poets, like Jnandev, Namdev, Tukaram, Jani
+            and Soyara, who through their folk songs have taught importance of worship and urged everyone to merge into
+            oneness with God.</p>
+        </div>
+        <div class="imgc">
+            <img src="images/des/lady.jpg" alt="">
+        </div>
+    </section>
+    <section class="container">
+        <div class="description1">
+            <p>
+            <h2>Warli Paintings</h2>The Warli tribe is among the largest tribes of Maharashtra region and lives on the outskirts of Mumbai, in the North Sahyadri region. The womenfolk of this tribe paint indigenous paintings and art known as Warli tribal wall paintings. These are generally done on the mud walls of their houses. This art form can be traced back to 10th century AD but was first discovered and appreciated for its distinctive style only in the early 70s. It generally takes inspiration from normal life routine and surroundings. The tribes of this region living across the cities from Dahanu, Mokhada, Talasari and pockets of Palghar district believe that nature is the best teacher and also their biggest benefactor. Activities from daily life like farming, food gathering, village life and elements from nature and wildlife are typical characteristics of this ethnic art. The colours and materials used for the paintings are derived from nature like brown and orange from henna, indigo from dye, red from bricks and white from thick rice paste. Cleverly modified bamboo sticks are used as paint brushes to create the paintings.
+        </p>
+        </div>
+        <div class="imgc">
+            <img src="images/des/w1.jpg" alt="">
+        </div>
+    </section>
+    <div class="footer-section">
+        <a href="index.html"><img src="images/home/logo-white.png" alt=""></a>
+        <p>&copy;2020</p>
+    </div>
+    <script>
+        $(window).scroll(function() {
+          var height = $(window).scrollTop();
+          if (height > 350) {
+              $('#myBtn').fadeIn();
+          } else {
+              $('#myBtn').fadeOut();
+          }
+      });
+      $(document).ready(function() {
+          $("#myBtn").click(function(event) {
+              event.preventDefault();
+              $("html, body").animate({ scrollTop: 0 }, "slow");
+              return false;
+          });
+
+      });
+      </script>
+</body>
+
+</html>
